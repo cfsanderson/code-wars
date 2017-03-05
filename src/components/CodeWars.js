@@ -862,3 +862,15 @@ function greet(name){
     return "Hello, " + name + "!"
   }
 }
+
+
+const findNextSquare = (sq) => {
+  if ((Math.sqrt(sq) % 1) > 0) {
+    return -1
+  } else {
+      do {
+       sq++
+      } while ((Math.sqrt(sq) % 1) !== 0) {sq++}
+    return sq - 1
+  }
+}
